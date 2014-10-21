@@ -1,0 +1,31 @@
+{
+  "name": "node-cloudfoundry-apps-manager",
+  "description": "Simple library for management (install, uninstall and update) applications in Cloud Foundry (Pivotal) instances",
+  "version": "0.0.1",
+  "author": "lafin <kuvakin@gmail.com>",
+  "contributors": [],
+  "private": true,
+  "keywords": [
+    "api",
+    "log",
+    "install",
+    "uninstall",
+    "update",
+    "cloudfoundry"
+  ],
+  "repository": "lafin/node-cloudfoundry-apps-manager",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  },
+  "dependencies": {
+    "request": "^2.45.0",
+    "async": "^0.9.0",
+    "form-data": "^0.1.4",
+    "js-yaml": "^3.2.2",
+    "jszip": "^2.4.0"
+  }
+}

@@ -31,19 +31,19 @@ var params = {
 };
 
 /**
- * Example: cf push
+ * Example: cf push app-name -p /local/path/to/zip -b https://github.com/dmikusa-pivotal/cf-php-build-pack.git -k 128M -m 128M -i 1
  */
 
 cf.install(params, function (error, data) {
-    console.log(error, data); // return error or url
+    console.log(error, data); // return error (instance Error) or url
 });
 
 /**
- * Example: cf delete
+ * Example: cf delete app-name -f
  */
 
 cf.uninstall(params, function (error, data) {
-    console.log(error, data); // return error or true
+    console.log(error, data); // return error (instance Error) or true
 });
 ```
 
